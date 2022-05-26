@@ -5,12 +5,6 @@
 
     // Xử lý HTTP ROOT
     define('HTTP_ROOT', $_SERVER['HTTP_REFERER']); 
-    
-    echo $http_root;
-
-    echo "<pre>";
-    print_r($_SERVER);
-    echo "</pre>";
 
     require_once 'core/Route.php';          // Load routes class
     require_once 'core/Database.php';       // Load Database Connection
