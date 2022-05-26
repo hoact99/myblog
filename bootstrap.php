@@ -11,7 +11,9 @@
     
     echo $http_root;
 
-    print_r($http_root);
+    echo "<pre>";
+    print_r($_SERVER);
+    echo "</pre>";
 
     require_once 'core/Route.php';          // Load routes class
     require_once 'core/Database.php';       // Load Database Connection
