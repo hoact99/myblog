@@ -4,10 +4,7 @@
     define('FILE_ROOT', str_replace('\\', '/', __DIR__));
 
     // Xử lý HTTP ROOT
-    $http_root = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https://' : 'http://';
-    $http_root .= $_SERVER['HTTP_HOST'];
-    $http_root .= str_replace($_SERVER['DOCUMENT_ROOT'], '', FILE_ROOT);
-    define('HTTP_ROOT', $http_root); 
+    define('HTTP_ROOT', $_SERVER['HTTP_REFERER']); 
     
     echo $http_root;
 
