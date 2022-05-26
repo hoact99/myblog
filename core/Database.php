@@ -3,9 +3,9 @@
     class Database {
 
         // DB Params
-        private $__dsn = "mysql:host=localhost; dbname=myblog";
-        private $__username = "root";
-        private $__password = "";
+        private $__dsn = "mysql:host=byt3adjecddqfpnhuj91-mysql.services.clever-cloud.com; dbname=byt3adjecddqfpnhuj91";
+        private $__username = "ukjs091upjezxrbf";
+        private $__password = "cXiAVmralrRtrA6i4IdE";
         protected $_conn = null;
 
         // DB Connect
