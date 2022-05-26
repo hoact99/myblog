@@ -8,7 +8,6 @@
     $http_root .= (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) ? $_SERVER['HTTP_X_FORWARDED_PROTO'] : 'http') . '://';
     $http_root .= $_SERVER['HTTP_HOST'];
     $http_root .= str_replace($_SERVER['DOCUMENT_ROOT'], '', FILE_ROOT);
-    echo $http_root;
     define('HTTP_ROOT', $http_root);
 
     require_once 'core/Route.php';          // Load routes class
