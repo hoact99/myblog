@@ -99,9 +99,6 @@
             
             // Kiểm tra method có tồn tại hay không
             if (method_exists($this->__controller, $this->__action)) {
-                echo '<pre>';
-                print_r($this);
-                echo '</pre>';
                 call_user_func_array([$this->__controller, $this->__action], $this->__params);
             } else {
                 $this->loadError();

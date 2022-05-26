@@ -9,6 +9,10 @@
     $http_root .= str_replace($_SERVER['DOCUMENT_ROOT'], '', FILE_ROOT);
     define('HTTP_ROOT', $http_root); 
     
+    echo $http_root;
+
+    print_r($http_root);
+
     require_once 'core/Route.php';          // Load routes class
     require_once 'core/Database.php';       // Load Database Connection
     require_once 'core/Model.php';          // Load Base Model
